@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Aniversário De RICHARD!</title>
+    <style>
+        /* Estilo do corpo da página */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #fdf5e6;
+            color: #333;
+            overflow-x: hidden; /* Evita rolagem horizontal */
+        }
+
+        /* Contêiner principal */
+        .container {
+            max-width: 90%; /* Ajuste automático em telas menores */
+            padding: 20px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Estilos para o título e o texto */
+        h1 {
+            font-size: 2.5em;
+            color: #d9534f;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        /* Bordas de flores nas extremidades */
+        body::before,
+        body::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 70px; /* Largura ajustável para telas menores */
+            background-image: url('1.jpg'); /* Use o caminho da imagem local */
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        /* Borda esquerda */
+        body::before {
+            left: 0;
+        }
+
+        /* Borda direita */
+        body::after {
+            right: 0;
+        }
+
+        /* Ajustes de responsividade */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            body::before,
+            body::after {
+                width: 50px; /* Reduz a largura das bordas em telas menores */
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5em;
+            }
+
+
+            p {
+                font-size: 0.9em;
+            }
+
+            body::before,
+            body::after {
+                width: 30px; /* Ajuste adicional para telas bem pequenas */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Feliz Aniversário, [BERTA]!</h1>
+        <p>Feliz aniversário, minha querida! Lembro como se fosse hoje quando você me contou sobre a oportunidade de estágio em Namapa. Fiquei tão feliz por você, mas também um pouco triste por saber que estaríamos distantes. Apesar da distância, a minha admiração por você só aumenta a cada dia. Sua força, dedicação e o seu sorriso contagiante me inspiram a cada segundo que conversamos. Sei que não é fácil estar longe de casa, mas saiba que estou aqui, torcendo por você a cada passo. Tenho muito orgulho de tudo o que você está conquistando. Que seu dia seja tão especial quanto você é para mim!
+Espero que seu dia seja repleto de alegria e que você se sinta cercada de amor e felicidade, mesmo estando longe dos seus pais. Você merece tudo de melhor. Mal posso esperar para comemorarmos juntos quando você voltar.
+Que os seus próximos anos sejam mais prósperos e cheios de boas conquistas!
+Eu sei que um dia como este você merece um grande presente, mas pela distância que nos separa digo que o seu presente está conservado e bem reservado e pondera recebe-lo quando estivermos juntos depois de terminar o estágio e retomar a casa, mal posso esperar para comemorarmos juntos quando você voltar.
+</p>
+    </div>
+</body>
+</html>
