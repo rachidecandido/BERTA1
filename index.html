@@ -17,6 +17,7 @@
             background-color: #fdf5e6;
             color: #333;
             overflow: hidden; /* Evita rolagem */
+            position: relative; /* Necessário para posicionamento das bordas */
         }
 
         /* Contêiner principal */
@@ -28,6 +29,8 @@
             border-radius: 10px;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
             color: olivedrab;
+            position: relative;
+            z-index: 1; /* Para ficar acima das bordas */
         }
 
         /* Estilos para o título e o texto */
@@ -49,11 +52,10 @@
             position: absolute;
             top: 0;
             bottom: 0;
-            width: 70px;
+            width: 60px; /* Ajustável para telas menores */
             background-image: url('1.jpg'); /* Caminho da imagem local */
             background-size: cover;
             background-repeat: no-repeat;
-            z-index: -1;
         }
 
         /* Borda esquerda */
@@ -72,7 +74,7 @@
             position: absolute;
             left: 0;
             right: 0;
-            height: 70px;
+            height: 60px;
             background-image: url('1.jpg'); /* Caminho da imagem local */
             background-size: cover;
             background-repeat: no-repeat;
@@ -103,8 +105,8 @@
             body::after,
             .top-border,
             .bottom-border {
-                width: 50px;
-                height: 50px;
+                width: 40px;
+                height: 40px;
             }
         }
 
@@ -136,11 +138,11 @@
     <!-- Conteúdo principal -->
     <div class="container">
         <h1>Feliz Aniversário, Berta!</h1>
-        <p style="font-style: oblique;">Feliz aniversário, minha querida! Lembro como se fosse hoje quando você me contou sobre a oportunidade de estágio em Namapa. Fiquei tão feliz por você, mas também um pouco triste por saber que estaríamos distantes. Apesar da distância, a minha admiração por você só aumenta a cada dia.</p> 
-        <p style="font-style: oblique;"> Sua força, dedicação e o seu sorriso contagiante me inspiram a cada segundo que conversamos. Sei que não é fácil estar longe de casa, mas saiba que estou aqui, torcendo por você a cada passo. Tenho muito orgulho de tudo o que você está conquistando. Que seu dia seja tão especial quanto você é para mim!
-            Espero que seu dia seja repleto de alegria e que você se sinta cercada de amor e felicidade, mesmo estando longe da sua familia. Você merece tudo de melhor. Mal posso esperar para comemorarmos juntos quando você voltar.
+        <p style="font-style: oblique;">Feliz aniversário, minha querida! Lembro como se fosse hoje quando você me contou sobre a oportunidade de estágio em Namapa.</p> 
+        <p style="font-style: oblique;">Fiquei tão feliz por você, mas também um pouco triste por saber que estaríamos distantes. Apesar da distância, a minha admiração por você só aumenta a cada dia. Sua força, dedicação e o seu sorriso contagiante me inspiram a cada segundo que conversamos. Sei que não é fácil estar longe de casa, mas saiba que estou aqui, torcendo por você a cada passo. Tenho muito orgulho de tudo o que você está conquistando. Que seu dia seja tão especial quanto você é para mim!
+            Espero que seu dia seja repleto de alegria e que você se sinta cercada de amor e felicidade, mesmo estando longe dos seus pais. Você merece tudo de melhor. Mal posso esperar para comemorarmos juntos quando você voltar.
             Que os seus próximos anos sejam mais prósperos e cheios de boas conquistas!</p>
-        <p style="font-style: oblique;">Eu sei que um dia como este você merece um grande presente, mas pela distância que nos separa digo que o seu presente está conservado e bem reservado e pondera recebe-lo quando estivermos juntos depois de terminar o estágio e retornar a casa, mal posso esperar para comemorarmos juntos quando você voltar.</p>
+        <p style="font-style: oblique;">Eu sei que um dia como este você merece um grande presente, mas pela distância que nos separa digo que o seu presente está conservado e bem reservado e pondera recebe-lo quando estivermos juntos depois de terminar o estágio e retomar a casa, mal posso esperar para comemorarmos juntos quando você voltar.</p>
     </div>
 </body>
 </html>
